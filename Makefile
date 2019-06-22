@@ -1,4 +1,12 @@
 GCC = gcc
 
+make:
+	make build
+	make run
+
 build:
-	gcc -o main *.c
+	make -C src
+
+run:
+	@echo "\nrunning... ./bin/main"
+	@./bin/main
